@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smugy | FOSS Developer</title>
+
+<link rel="icon" href="https://github.com/smuugy.png">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --bg:#09090b;
+    --card:#131316;
+    --accent:#52abff;
+    --text:#fafafa;
+    --muted:#a1a1aa;
+    --border:#27272a;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Inter",sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:24px;
+    color:var(--text);
+
+    background:
+        radial-gradient(circle at top,#1e293b 0%,#0f172a 30%,#09090b 90%);
+}
+
+.container{
+    width:100%;
+    max-width:520px;
+}
+
+.card{
+    background:rgba(19,19,22,.75);
+    backdrop-filter:blur(25px);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:32px;
+    padding:40px 28px;
+    text-align:center;
+    box-shadow:
+        0 20px 80px rgba(0,0,0,.45);
+}
+
+.avatar{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid var(--accent);
+    margin-bottom:20px;
+    transition:.3s ease;
+}
+
+.avatar:hover{
+    transform:scale(1.05);
+}
+
+h1{
+    font-size:2rem;
+    font-weight:800;
+}
+
+.highlight{
+    color:var(--accent);
+}
+
+.tagline{
+    margin-top:10px;
+    color:var(--muted);
+    font-size:1rem;
+}
+
+.bio{
+    margin-top:18px;
+    color:#d4d4d8;
+    line-height:1.7;
+}
+
+.tech-stack{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    margin:28px 0;
+}
+
+.badge{
+    padding:8px 14px;
+    border-radius:999px;
+    background:#1f2937;
+    border:1px solid rgba(255,255,255,.08);
+    font-size:.85rem;
+    font-weight:600;
+}
+
+.links{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.link-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+
+    text-decoration:none;
+    color:white;
+
+    padding:16px;
+    border-radius:18px;
+
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.25s ease;
+    font-weight:600;
+}
+
+.link-btn:hover{
+    transform:translateY(-3px);
+    border-color:var(--accent);
+    background:rgba(82,171,255,.12);
+}
+
+.link-btn i{
+    font-size:1.1rem;
+}
+
+.footer{
+    margin-top:28px;
+    color:#71717a;
+    font-size:.9rem;
+}
+
+.github-card{
+    margin-top:22px;
+    border-radius:16px;
+    overflow:hidden;
+}
+
+.github-card img{
+    width:100%;
+    display:block;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <img
+            class="avatar"
+            src="https://github.com/smuugy.png?size=256"
+            alt="Smugy"
+        >
+
+        <h1><span class="highlight">Smug</span>y</h1>
+
+        <p class="tagline">
+             Building software, tools, and open-source projects.
+        </p>
+
+        <div class="tech-stack">
+            <span class="badge">C#</span>
+            <span class="badge">C++</span>
+            <span class="badge">Kotlin</span>
+            <span class="badge">JavaScript</span>
+        </div>
+
+        <div class="links">
+
+            <a
+                href="https://github.com/smuugy"
+                target="_blank"
+                class="link-btn"
+            >
+                <i class="fa-brands fa-github"></i>
+                GitHub
+            </a>
+
+            <a
+                href="https://instagram.com/smuugy"
+                target="_blank"
+                class="link-btn"
+            >
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+            </a>
+
+            <a
+                href="https://youtube.com/@trionine"
+                target="_blank"
+                class="link-btn"
+            >
+                <i class="fa-brands fa-youtube"></i>
+                YouTube
+            </a>
+
+            <a
+                href="mailto:smuugy@proton.me"
+                class="link-btn"
+            >
+                <i class="fa-solid fa-envelope"></i>
+                Contact
+            </a>
+
+        </div>
+
+        <div class="github-card">
+            <img
+                src="https://github-readme-stats.vercel.app/api?username=smuugy&show_icons=true&theme=transparent&hide_border=true"
+                alt="GitHub Stats"
+            >
+        </div>
+
+        <div class="footer">
+            © 2026 Smugy
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
